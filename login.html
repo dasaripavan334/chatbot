@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="matter ">
+            <h6>chatbot M&H </h6>
+            <h5>Remember that your mental health is a priority, your inner peace is essential and your self-care is a necessity.</h5>
+            <h4> Mental health problems don't define who you are.
+                 They are something you experience.
+                 You walk in the rain and you feel the rain, but you are not the rain</h4>
+           
+        </div>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="tab active" onclick="showLogin()">LOGIN</div>
+            <div class="tab " onclick="showSignUp()">SIGN UP</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Logo and Heading -->
+            <div class="logo">
+                <img src="robot.png" alt="Logo">
+                
+            </div>
+            
+
+            <!-- Login Form -->
+            <div class="form-container active" id="loginContainer">
+                                <h2>LOGIN</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <i class="icon">👤</i>
+                        <input type="email" id="loginEmail" placeholder="Email" required>
+                       
+                    </div>
+                    <div class="input-group">
+                        <i class="icon">🔒</i>
+                        <input type="password" id="loginPassword" placeholder="Password" required>
+                    </div>
+                    <p class="forgot-password"><a href="#" onclick="showForgotPassword()">Forgot Password?</a></p>
+                    <button type="submit" class="btn">LOGIN</button>
+                </form>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="form-container" id="signUpContainer">
+                <h2>SIGNUP</h2>
+                <form id="signUpForm">
+                    <div class="input-group">
+                        <i class="icon">👤</i>
+                        <input type="email" id="signUpEmail" placeholder="Email" required>
+                        
+                    </div>
+                    <div class="input-group">
+                        <i class="icon">🔒</i>
+                        <input type="password" id="signUpPassword" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn">SIGN UP</button>
+                </form>
+            </div>
+
+            <!-- Forgot Password Form -->
+            <div class="form-container" id="forgotPasswordContainer">
+                <form id="forgotPasswordForm">
+                    <div class="input-group">
+                        <i class="icon">📧</i>
+                        <input type="email" id="forgotEmail" placeholder="Email" required>
+                    </div>
+                    <button type="submit" class="btn">RESET PASSWORD</button>
+                </form>
+                <p class="back-to-login"><a href="#" onclick="showLogin()">Back to Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
